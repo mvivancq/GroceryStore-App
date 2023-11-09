@@ -22,10 +22,23 @@ struct CartView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 50, height: 50)
                             VStack(alignment: .leading) {
-                                Text("\(cartItem.product.name) \(cartManager.getTotalQuantity(for: cartItem.product))")
-                                    .font(.headline)
-                                Text("Total Price: $\(cartManager.getTotalPrice(for: cartItem.product), specifier: "%.2f")")
-                                    .font(.subheadline)
+                                HStack{
+                                    Text("\(cartItem.product.name)")
+                                        .font(.headline)
+                                    Spacer()
+                                    Text("Items: \(cartManager.getTotalQuantity(for: cartItem.product))")
+                                        .font(.subheadline)
+                                        
+                                }
+                                HStack{
+                                    Text("Total Price:")
+                                        .font(.subheadline)
+                                    Spacer()
+                                    Text(" $\(cartManager.getTotalPrice(for: cartItem.product), specifier: "%.2f")")
+                                        .font(.headline)
+                                        
+                                }
+                             
                             }
                         }
                     }
@@ -74,7 +87,7 @@ struct CartView: View {
                         }
                         
                     }
-                    .padding()
+                    .padding(25)
                     
                     
                     
