@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GroceryAppApp: App {
+    @EnvironmentObject private var cartManager: CartManager
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
+                .environmentObject(CartManager())
         }
     }
 }

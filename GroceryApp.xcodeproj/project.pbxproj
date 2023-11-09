@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		771B8E162AFD42250051236F /* GroceryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E152AFD42250051236F /* GroceryAppApp.swift */; };
-		771B8E182AFD42250051236F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E172AFD42250051236F /* ContentView.swift */; };
+		771B8E182AFD42250051236F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E172AFD42250051236F /* WelcomeView.swift */; };
 		771B8E1A2AFD42270051236F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771B8E192AFD42270051236F /* Assets.xcassets */; };
 		771B8E1D2AFD42270051236F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771B8E1C2AFD42270051236F /* Preview Assets.xcassets */; };
+		771B8E262AFD430D0051236F /* ProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E252AFD430D0051236F /* ProductsModel.swift */; };
+		771B8E282AFD432C0051236F /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E272AFD432C0051236F /* ProductItemView.swift */; };
+		771B8E2A2AFD43370051236F /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E292AFD43370051236F /* CartView.swift */; };
+		773E4CA72AFD504200D63BF3 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E4CA62AFD504200D63BF3 /* ShopView.swift */; };
+		773E4CA92AFD550200D63BF3 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E4CA82AFD550200D63BF3 /* CartManager.swift */; };
+		773E4CAB2AFD5EBB00D63BF3 /* Color Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E4CAA2AFD5EBB00D63BF3 /* Color Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		771B8E122AFD42250051236F /* GroceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		771B8E152AFD42250051236F /* GroceryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryAppApp.swift; sourceTree = "<group>"; };
-		771B8E172AFD42250051236F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		771B8E172AFD42250051236F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		771B8E192AFD42270051236F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771B8E1C2AFD42270051236F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		771B8E252AFD430D0051236F /* ProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModel.swift; sourceTree = "<group>"; };
+		771B8E272AFD432C0051236F /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		771B8E292AFD43370051236F /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		773E4CA62AFD504200D63BF3 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		773E4CA82AFD550200D63BF3 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		773E4CAA2AFD5EBB00D63BF3 /* Color Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				771B8E152AFD42250051236F /* GroceryAppApp.swift */,
-				771B8E172AFD42250051236F /* ContentView.swift */,
+				771B8E172AFD42250051236F /* WelcomeView.swift */,
+				7768DE5E2AFD88F300AD6610 /* Views */,
+				7768DE602AFD890900AD6610 /* ViewModels */,
+				7768DE5F2AFD890200AD6610 /* Models */,
+				7768DE612AFD892E00AD6610 /* Helpers */,
 				771B8E192AFD42270051236F /* Assets.xcassets */,
 				771B8E1B2AFD42270051236F /* Preview Content */,
 			);
@@ -65,6 +81,40 @@
 				771B8E1C2AFD42270051236F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7768DE5E2AFD88F300AD6610 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				771B8E292AFD43370051236F /* CartView.swift */,
+				773E4CA62AFD504200D63BF3 /* ShopView.swift */,
+				771B8E272AFD432C0051236F /* ProductItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7768DE5F2AFD890200AD6610 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				771B8E252AFD430D0051236F /* ProductsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7768DE602AFD890900AD6610 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				773E4CA82AFD550200D63BF3 /* CartManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7768DE612AFD892E00AD6610 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				773E4CAA2AFD5EBB00D63BF3 /* Color Helper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771B8E182AFD42250051236F /* ContentView.swift in Sources */,
+				771B8E2A2AFD43370051236F /* CartView.swift in Sources */,
+				773E4CA92AFD550200D63BF3 /* CartManager.swift in Sources */,
+				771B8E282AFD432C0051236F /* ProductItemView.swift in Sources */,
+				773E4CA72AFD504200D63BF3 /* ShopView.swift in Sources */,
+				771B8E182AFD42250051236F /* WelcomeView.swift in Sources */,
+				771B8E262AFD430D0051236F /* ProductsModel.swift in Sources */,
+				773E4CAB2AFD5EBB00D63BF3 /* Color Helper.swift in Sources */,
 				771B8E162AFD42250051236F /* GroceryAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
