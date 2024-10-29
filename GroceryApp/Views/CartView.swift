@@ -10,6 +10,7 @@ import SwiftUI
 struct CartView: View {
     @EnvironmentObject private var cartManager: CartManager
     @State private var isDeleteAllAlertPresented = false
+    @State private var isCheckoutActive = false
     
     var body: some View {
         NavigationView {
@@ -72,8 +73,9 @@ struct CartView: View {
                         }
                         
                         Spacer()
-                        Button() {
-                            
+                        // Botón para navegar a la vista `Checkout`
+                        Button {
+                            isCheckoutActive = true // Activa la navegación al hacer clic
                         } label: {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
@@ -85,7 +87,6 @@ struct CartView: View {
                                     .bold()
                             }
                         }
-                        
                     }
                     .padding(25)
                     
@@ -129,6 +130,10 @@ struct CartView: View {
                     secondaryButton: .cancel(Text("Cancel"))
                 )
             }
+            // Usa `navigationDestination` para navegar a la vista `Checkout`
+           .navigationDestination(isPresented: $isCheckoutActive) {
+               Checkout()
+           }
         }
     }
 }
