@@ -17,6 +17,7 @@
 		773E4CA72AFD504200D63BF3 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E4CA62AFD504200D63BF3 /* ShopView.swift */; };
 		773E4CA92AFD550200D63BF3 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E4CA82AFD550200D63BF3 /* CartManager.swift */; };
 		773E4CAB2AFD5EBB00D63BF3 /* Color Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773E4CAA2AFD5EBB00D63BF3 /* Color Helper.swift */; };
+		EE8579562CD16800005236ED /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8579552CD16800005236ED /* Checkout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		773E4CA62AFD504200D63BF3 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		773E4CA82AFD550200D63BF3 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		773E4CAA2AFD5EBB00D63BF3 /* Color Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Helper.swift"; sourceTree = "<group>"; };
+		EE8579552CD16800005236ED /* Checkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		7768DE5E2AFD88F300AD6610 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE8579552CD16800005236ED /* Checkout.swift */,
 				771B8E292AFD43370051236F /* CartView.swift */,
 				773E4CA62AFD504200D63BF3 /* ShopView.swift */,
 				771B8E272AFD432C0051236F /* ProductItemView.swift */,
@@ -190,6 +193,7 @@
 				771B8E2A2AFD43370051236F /* CartView.swift in Sources */,
 				773E4CA92AFD550200D63BF3 /* CartManager.swift in Sources */,
 				771B8E282AFD432C0051236F /* ProductItemView.swift in Sources */,
+				EE8579562CD16800005236ED /* Checkout.swift in Sources */,
 				773E4CA72AFD504200D63BF3 /* ShopView.swift in Sources */,
 				771B8E182AFD42250051236F /* WelcomeView.swift in Sources */,
 				771B8E262AFD430D0051236F /* ProductsModel.swift in Sources */,
